@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color:  hsl(0, 0%, 98%);
+}
+
+header
+{
+    text-align: center;
+    margin:0 auto ;
+    color:  hsl(229, 6%, 66%);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px;
+
+}
+header h2 {
+    font-size: 34px;
+    font-weight: 200;
+}
+header h3 {
+    color: hsl(234, 12%, 34%);
+    font-size: 34px;
+    font-weight: 600;
+}
+header p {
+    max-width: 600px;
+    margin:0 auto ;
+    margin-top :60px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap :25px;
+    margin-top: 20px;
+
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 7px;
+      padding:30px;
+    text-align: right;
+
+}
+
+ .box-text{
+    text-align: left;
+    margin-bottom: 50px;
+
+}
+
+.box1{
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.box2{
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.box3{
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.box4{
+border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.box-text h5 {
+        font-size: 20px;
+        color: hsl(234, 12%, 34%);
+        margin-bottom:10px ;
+    }
+    .box-container
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        box-shadow:  black 20px;
+    }
+
+    .box1 , .box4 
+    {
+align-self:center ;
+    }
+@media screen and (max-width: 768px ) 
+{
+.main{
+    grid-template-columns:1fr ;
+}    
+}
+@media screen and (max-width: 425px ) 
+{
+body{
+    font-size: 13px;
+}  
+header {
+    font-size: 20px;
+}
+header h2 {
+    font-size: 20px; 
+
+}
+header h3 
+{
+font-size: 20px;
+}
+.box{
+    padding: 20px;
+    
+}
+}
